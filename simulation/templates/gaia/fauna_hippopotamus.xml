@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_aggressive">
+  <Armour>
+    <Hack>3</Hack>
+    <Pierce>4</Pierce>
+    <Crush>5</Crush>
+  </Armour>
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>12</Hack>
+        <Pierce>12</Pierce>
+      </Damage>
+      <MaxRange>3</MaxRange>
+    </Melee>
+  </Attack>
+  <Footprint>
+    <Square width="2.5" depth="5"/>
+    <Height>1.5</Height>
+  </Footprint>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <GenericName>Hippopotamus</GenericName>
+    <SpecificName>Hippopotamus amphibius</SpecificName>
+    <Icon>gaia/fauna_hippopotamus.png</Icon>
+  </Identity>
+  <Loot>
+    <xp>50</xp>
+  </Loot>
+  <ResourceSupply>
+    <Amount>400</Amount>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/lion_select.xml</select>
+      <attack_melee>actor/fauna/animal/lion_attack.xml</attack_melee>
+      <death>actor/fauna/animal/lion_death.xml</death>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>fauna/hippopotamus.xml</Actor>
+  </VisualActor>
+</Entity>

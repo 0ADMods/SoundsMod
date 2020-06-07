@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship_trireme">
+  <Cost>
+    <Resources>
+      <wood op="add">50</wood>
+      <metal op="add">50</metal>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>kush</Civ>
+    <Classes datatype="tokens">KushTrireme</Classes>
+    <GenericName>Ptolemaic Mercenary Trireme</GenericName>
+    <SpecificName>shry ʿȝ</SpecificName>
+    <Icon>units/ptol_ship_trireme.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>structures/kushites/trireme.xml</Actor>
+  </VisualActor>
+</Entity>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <Auras datatype="tokens">
+    structures/workshop_repair
+  </Auras>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="30.0" depth="30.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>2</Max>
+    <List datatype="tokens">Siege</List>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Siege Workshop</GenericName>
+    <SelectionGroupName>template_structure_military_workshop</SelectionGroupName>
+    <Icon>structures/siege_workshop.png</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+    <Tooltip>Construct Siege Engines and research Siege Engine technologies.</Tooltip>
+    <VisibleClasses datatype="tokens">City Workshop</VisibleClasses>
+  </Identity>
+  <Loot>
+    <wood>60</wood>
+  </Loot>
+  <Obstruction>
+    <Static width="29.0" depth="29.0"/>
+  </Obstruction>
+  <ProductionQueue>
+    <BatchTimeModifier>0.7</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}_siege_ballista_packed
+      units/{civ}_siege_scorpio_packed
+      units/{civ}_siege_oxybeles_packed
+      units/{civ}_siege_lithobolos_packed
+      units/{civ}_siege_polybolos_packed
+      units/{civ}_siege_ram
+      units/{civ}_siege_tower
+    </Entities>
+    <Technologies datatype="tokens">
+      siege_attack
+      siege_armor
+      siege_cost_metal
+      siege_cost_wood
+      siege_bolt_accuracy
+    </Technologies>
+  </ProductionQueue>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_barracks.xml</constructed>
+      <select>interface/select/building/sel_barracks.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Radius>38</Radius>
+  </TerritoryInfluence>
+  <VisualActor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

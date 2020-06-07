@@ -1,0 +1,16 @@
+{
+
+	"name": "sounds_etc",
+
+	"version": "1.0.0",
+
+	"label": "Sounds",
+
+	"url": "none",
+
+	"description": "Add new sounds to the game.",
+
+	"dependencies": ["0ad=0.0.24"]
+
+}
+
