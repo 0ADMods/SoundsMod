@@ -438,12 +438,23 @@ Player.prototype.SetState = function(newState, message)
 	if (newState === "defeated")
 	{
 		let cmpSoundManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_SoundManager);
-		let cmpSound = Engine.QueryInterface(this.entity, IID_Sound);
+		let cmpPlayerManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_PlayerManager);
+		let dummyPosition = new Vector3D();
+		let players = cmpPlayerManager.GetAllPlayers();
+		for (let i = 1; i < players.length; ++i)
+		{
+			let playerEnt = players[i];
+			let cmpSound = Engine.QueryInterface(playerEnt, IID_Sound);
+			if (!cmpSound)
+				continue;
 
-		// Sound must be have <Omnipresent>1</Omnipresent> and not have <HeardBy>owner</HeardBy>
-		// TODO: Support <HeardBy>othersonly</HeardBy> so that the losing player doesn't hear it.
-		if(cmpSoundManager && cmpSound)
-			cmpSoundManager.PlaySoundGroupAtPosition(cmpSound.GetSoundGroup("defeated"),  new Vector3D(0, 0, 0))
+			if (playerEnt === this.entity)
+				cmpSoundManager.PlaySoundGroupAtPosition(cmpSound.GetSoundGroup("defeat"), dummyPosition)
+			else if (this.IsAlly(i))
+				cmpSoundManager.PlaySoundGroupAtPosition(cmpSound.GetSoundGroup("ally_defeat"), dummyPosition)
+			else
+				cmpSoundManager.PlaySoundGroupAtPosition(cmpSound.GetSoundGroup("enemy_defeat"), dummyPosition)
+		}
 	}
 
 	this.state = newState;

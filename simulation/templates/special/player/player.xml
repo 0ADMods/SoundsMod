@@ -91,7 +91,9 @@
   </ResourceTrickle>
   <Sound>
     <SoundGroups>
-      <defeated>interface/alarm/alarm_defeat.xml</defeated>
+      <defeat>interface/alarm/alarm_defeat.xml</defeat>
+      <ally_defeat>interface/alarm/alarm_ally_defeat.xml</ally_defeat>
+      <enemy_defeat>interface/alarm/alarm_enemy_defeat.xml</enemy_defeat>
     </SoundGroups>
   </Sound>
   <StatisticsTracker>
