@@ -11,5 +11,5 @@
 	<RandPitch>1</RandPitch>
 	<Threshold>1</Threshold>
 	<Path>audio/interface/alarm/</Path>
-	<Sound>alarmdefeat_2.ogg</Sound>
+	<Sound>alarmdefeat_1.ogg</Sound>
 </SoundGroup>
