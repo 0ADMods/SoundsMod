@@ -18,12 +18,13 @@
     <Height>9.0</Height>
   </Footprint>
   <Health>
+    <Max>2000</Max>
     <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x6</SpawnEntityOnDeath>
   </Health>
   <Identity>
     <GenericName>Library</GenericName>
     <SelectionGroupName>template_structure_special_library</SelectionGroupName>
-    <Tooltip>Research special technologies.</Tooltip>
+    <VisibleClasses datatype="tokens">Library</VisibleClasses>
     <Icon>structures/library_scroll.png</Icon>
   </Identity>
   <Loot>
@@ -34,7 +35,6 @@
     <Static width="25.0" depth="30.0"/>
   </Obstruction>
   <ProductionQueue>
-    <BatchTimeModifier>0.7</BatchTimeModifier>
     <Technologies datatype="tokens">
       successors/special_hellenistic_metropolis
     </Technologies>
@@ -46,8 +46,13 @@
     </SoundGroups>
   </Sound>
   <TerritoryInfluence>
+    <Root>false</Root>
     <Radius>50</Radius>
+    <Weight>40000</Weight>
   </TerritoryInfluence>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
   <VisualActor>
     <FoundationActor>structures/fndn_7x9.xml</FoundationActor>
   </VisualActor>
