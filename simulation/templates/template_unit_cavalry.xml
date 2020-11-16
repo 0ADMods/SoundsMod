@@ -90,7 +90,7 @@
       <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
       <death>actor/fauna/death/death_horse.xml</death>
       <trained>interface/alarm/alarm_create_cav.xml</trained>
-	  <gather_meat>resource/gathering/gather_meat.xml</gather_meat>
+      <gather_meat>resource/gathering/gather_meat.xml</gather_meat>
     </SoundGroups>
   </Sound>
   <StatusBars>
