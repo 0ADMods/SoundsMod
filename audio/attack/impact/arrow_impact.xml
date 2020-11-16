@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<SoundGroup>
+	<Gain>.4</Gain>
+	<Priority>60</Priority>
+	<ConeGain>1</ConeGain>
+	<Looping>0</Looping>
+	<RandOrder>1</RandOrder>
+	<RandGain>1</RandGain>
+	<GainUpper>0.5</GainUpper>
+	<GainLower>0.2</GainLower>
+	<RandPitch>1</RandPitch>
+	<PitchUpper>1.3</PitchUpper>
+	<PitchLower>0.7</PitchLower>
+	<Threshold>100</Threshold>
+	<Path>audio/attack/impact/</Path>
+	<Sound>arrowimpdirt_21.ogg</Sound>
+	<Sound>arrowimpdirt_22.ogg</Sound>
+	<Sound>arrowimpdirt_23.ogg</Sound>
+	<Sound>arrowimpdirt_24.ogg</Sound>
+	<Sound>arrowimpdirt_25.ogg</Sound>
+	<Sound>arrowimpdirt_26.ogg</Sound>
+	<Sound>arrowimpdirt_27.ogg</Sound>
+	<Sound>arrowimpdirt_28.ogg</Sound>
+	<Sound>arrowimpdirt_29.ogg</Sound>
+	<Sound>arrowimpdirt_211.ogg</Sound>
+	<Sound>arrowimpdirt_212.ogg</Sound>
+	<Sound>arrowimpdirt_213.ogg</Sound>
+	<Sound>arrowimpdirt_214.ogg</Sound>
+	<Sound>arrowimpdirt_215.ogg</Sound>
+	<Sound>arrowimpdirt_216.ogg</Sound>
+	<Sound>arrowimpdirt_217.ogg</Sound>
+	<Sound>arrowimpdirt_218.ogg</Sound>
+	<Sound>arrowimpdirt_219.ogg</Sound>
+</SoundGroup>
