@@ -2,6 +2,7 @@
 <Entity parent="template_unit_support">
   <Attack>
     <Melee>
+      <AttackName>Dagger</AttackName>
       <Damage>
         <Hack>2.0</Hack>
         <Pierce>0</Pierce>
@@ -12,6 +13,7 @@
       <RepeatTime>1000</RepeatTime>
     </Melee>
     <Slaughter>
+      <AttackName>Slaughter</AttackName>
       <Damage>
         <Hack>25.0</Hack>
         <Pierce>0.0</Pierce>
@@ -20,37 +22,35 @@
       <MaxRange>2</MaxRange>
     </Slaughter>
   </Attack>
-  <Auras datatype="tokens">
-    units/female_inspiration
-  </Auras>
   <Builder>
     <Rate>1.0</Rate>
     <Entities datatype="tokens">
-      structures/{civ}_civil_centre
-      structures/{civ}_crannog
-      structures/{civ}_military_colony
-      structures/{civ}_house
-      structures/{civ}_storehouse
-      structures/{civ}_farmstead
-      structures/{civ}_field
-      structures/{civ}_corral
-      structures/{civ}_dock
-      structures/{civ}_barracks
-      structures/{civ}_arsenal
-      structures/{civ}_forge
-      structures/{civ}_temple
-      structures/{civ}_market
-      structures/{civ}_outpost
-      structures/{civ}_sentry_tower
-      structures/{civ}_defense_tower
-      structures/{civ}_fortress
+      structures/{civ}/civil_centre
+      structures/{civ}/crannog
+      structures/{civ}/military_colony
+      structures/{civ}/house
+      structures/{civ}/storehouse
+      structures/{civ}/farmstead
+      structures/{civ}/field
+      structures/{civ}/corral
+      structures/{civ}/dock
+      structures/{civ}/barracks
+      structures/{civ}/arsenal
+      structures/{civ}/forge
+      structures/{civ}/temple
+      structures/{civ}/market
+      structures/{civ}/outpost
+      structures/{civ}/sentry_tower
+      structures/{civ}/defense_tower
+      structures/{civ}/fortress
       structures/wallset_palisade
-      structures/{civ}_wallset_siege
-      structures/{civ}_wallset_stone
-      structures/{civ}_wonder
+      structures/{civ}/wallset_siege
+      structures/{civ}/wallset_stone
+      structures/{civ}/wonder
     </Entities>
   </Builder>
   <Cost>
+    <BuildTime>9</BuildTime>
     <Resources>
       <food>50</food>
     </Resources>
@@ -100,6 +100,7 @@
       <gather_rock>resource/mining/pickaxe.xml</gather_rock>
       <gather_ore>resource/mining/mining.xml</gather_ore>
       <gather_ruins>resource/mining/mining.xml</gather_ruins>
+      <invalid_building_placement>interface/alarm/alarm_invalid_building_placement.xml</invalid_building_placement>
     </SoundGroups>
   </Sound>
   <UnitAI>
