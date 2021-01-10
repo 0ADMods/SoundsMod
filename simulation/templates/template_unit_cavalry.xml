@@ -11,9 +11,7 @@
     <Slaughter>
       <AttackName>Slaughter</AttackName>
       <Damage>
-        <Hack>100.0</Hack>
-        <Pierce>0.0</Pierce>
-        <Crush>0.0</Crush>
+        <Hack>1000</Hack>
       </Damage>
       <MaxRange>2</MaxRange>
     </Slaughter>
@@ -44,6 +42,9 @@
     <stone>0</stone>
     <metal>0</metal>
   </Loot>
+  <Position>
+    <TurnRate>4</TurnRate>
+  </Position>
   <Promotion>
     <RequiredXp>150</RequiredXp>
   </Promotion>
@@ -79,19 +80,17 @@
   </Selectable>
   <Sound>
     <SoundGroups>
-      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
-      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <attack_slaughter>attack/weapon/sword_attack.xml</attack_slaughter>
       <order_attack>voice/{lang}/civ/civ_{phenotype}_attack.xml</order_attack>
-      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
       <order_garrison>voice/{lang}/civ/civ_{phenotype}_garrison.xml</order_garrison>
+      <order_gather>voice/{lang}/civ/civ_{phenotype}_gather.xml</order_gather>
+      <order_walk>voice/{lang}/civ/civ_{phenotype}_walk.xml</order_walk>
+      <select>voice/{lang}/civ/civ_{phenotype}_select.xml</select>
       <walk>actor/mounted/movement/walk.xml</walk>
       <run>actor/mounted/movement/walk.xml</run>
       <attack_impact_ranged>attack/impact/arrow_impact.xml</attack_impact_ranged>
-      <attack_melee>attack/weapon/sword_attack.xml</attack_melee>
-      <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
       <death>actor/fauna/death/death_horse.xml</death>
       <trained>interface/alarm/alarm_create_cav.xml</trained>
-      <gather_meat>resource/gathering/gather_meat.xml</gather_meat>
     </SoundGroups>
   </Sound>
   <StatusBars>
