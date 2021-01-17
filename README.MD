@@ -1,35 +1,35 @@
-# Current Changes
+# ROADMAP
 
-- Add healer recruitement sound (template_unit_support_healer)
-- Use a knife sound for slaughter (template_unit)
-- Bow attacks normalized
-- New swords attack sounds
-- New select sound for library, and construction sound (template_structure_special_library)
-- New healer recruitment sound
++ [ ] Rename
++ [ ] Normalize
++ [ ] XML
++ [ ] Priority
 
-# SG Branch Changes
-* = not yet implemented (just sound files)
+## Rename soundclips
+This convention will be used: [Art File Naming Convention](https://trac.wildfiregames.com/wiki/ArtFileNamingConventions)
 
-- New arrow impact (using arrowimpdirt for now)
-- New arrowimpmetal*
-- New arrowimpdirt*
-- New fleshimp (unused)
-- New fleshstab (using for dagger attack, i.e. slaughter)
-- New jav impact (using fleshimp for now)
-- New slingimpmetal*
-- New slingimpstone*
-- New arrow fly
-- New bow attack
-- New jav attack
-- New pike attack (temporary?)
-- New sling attack
-- New spear attack (temporary? includes metal impact sounds)
-- New sword attack (temporary?)
-- New con saw (unused)
-- New con stone (unused)
-- New con wood
-- New lumber tree
-- Various tweaks to combat sounds to be more balanced
+When renaming soundclips, **also** have to be changed:
++ **XML files** referencing them
++ **Templates**
 
-- New slaughter sound/knife attack (using fleshstab)
-- Fixed/finished implementation of meat and fruit gathering sounds (template_unit..., variants ...gather_fruit and ...gather_meat had missing sound=/event= values causing no sound to play)
+## Normalize soundclips
+> dBTP will be used, because RMS won't fit due to the short length and silences on soundclips
+
+_The values are being tested_
+
+| Sound type                  | Value (dBTP) 
+| :-:                         | :-:          
+| Alarms, notifications...    | -6
+| Music                       | -8
+| Units, resources, attack... | -12
+| Ambient                     | -18
+
+I would **not** use any compression, to maintain the more dynamic range on original sounds.
+
+## Set XMLs properly
+1. Remove unused parameters (`cone`, `threshold`...)
+2. Set `Gain = 1`. Once having made this, we should start testing and redefining Gain for each clip/group
+3. Set `Priority` parameter, according to values proposed on [here](https://gist.github.com/Porrumentzio/26b52fbe1de98e84ad1f5644501da8bc#gistcomment-3595266)
+
+## Develope Priority parameter
+This parameter sets which sound have priority towards other, if all of them can not be played. This is not implemented on code (or we did not find it out).
