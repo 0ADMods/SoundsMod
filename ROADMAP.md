@@ -31,5 +31,10 @@ I would **not** use any compression, to maintain the more dynamic range on origi
 2. Set `Gain = 1`. Once having made this, we should start testing and redefining Gain for each clip/group
 3. Set `Priority` parameter, according to values proposed on [here](https://gist.github.com/Porrumentzio/26b52fbe1de98e84ad1f5644501da8bc#gistcomment-3595266)
 
-## Develope Priority parameter
+## Code Priority parameter
+
 This parameter sets which sound have priority towards other, if all of them can not be played. This is not implemented on code (or we did not find it out).
+
+## Code Threshold parameter
+
+This parameter will be used to prevent too many sounds of the same time to be played at once.
