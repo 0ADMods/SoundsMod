@@ -29,7 +29,15 @@ I would **not** use any compression, to maintain the more dynamic range on origi
 ## Set XMLs properly
 1. Remove unused parameters (`cone`, `threshold`...)
 2. Set `Gain = 1`. Once having made this, we should start testing and redefining Gain for each clip/group
-3. Set `Priority` parameter, according to values proposed on [here](https://gist.github.com/Porrumentzio/26b52fbe1de98e84ad1f5644501da8bc#gistcomment-3595266)
+3. Set `Priority` parameter, according to these values:
+
+        80: Environmental background sound (including on-screen non-periodic emitters like waterfalls and rivers)
+        70: Unit and building selection and orders, UI interactions (confirmatory responses essential to gameplay)
+        60: Alarms, notifications, and warnings (very useful, but not genuinely essential)
+        50: Structure destruction/capture, unit deaths (important cues into the direction of the battle)
+        40: General weapon sounds and impacts (nice 'window-dressing' but not completely essential)
+        30: Gathering, building, and movement noises (non-essential)
+        20: Incidental, periodic ambiance (a gust of wind, birds chirping by trees, etc.)
 
 ## Code Priority parameter
 
