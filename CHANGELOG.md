@@ -1,4 +1,5 @@
-# Current Changes
+
+### Current Changes
 
 - Add healer recruitement sound (template_unit_support_healer)
 - Use a knife sound for slaughter (template_unit)
@@ -7,7 +8,7 @@
 - New select sound for library, and construction sound (template_structure_special_library)
 - New healer recruitment sound
 
-# SG Branch Changes
+### SG Branch Changes
 * = not yet implemented (just sound files)
 
 - New arrow impact (using arrowimpdirt for now)
